@@ -1,6 +1,4 @@
 import React from "react";
-import Link from "next/link";
-import { getCountries } from "../api";
 
 function CountrySelector({ handleCountryChange, data }) {
   const countries = data.map((obj) => {

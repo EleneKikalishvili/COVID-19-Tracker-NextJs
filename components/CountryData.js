@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import DetailedCard from "./Cards/DetailedCard";
-import { getCountryData } from "../api";
 
 function CountryData({ countrySlug, data }) {
   const [CountryData, setCountryData] = useState(null);
@@ -38,7 +37,7 @@ function CountryData({ countrySlug, data }) {
         <p className="m-2">{count}</p>
       </div>
       <h2>{countrySlug.toUpperCase()}</h2>
-      {content}
+      <div className="d-flex flex-row">{content}</div>
     </div>
   );
 }
